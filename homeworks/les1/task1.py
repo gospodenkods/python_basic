@@ -19,3 +19,4 @@ summary_line = f"Day of week '{firs_variable}' city where you live '{next_variab
 Your favorite number '{last_variable}'"
 
 print(summary_line)
+""
