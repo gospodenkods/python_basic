@@ -9,7 +9,7 @@ max_int = 0
 for i in input_num:
     if int(i) > max_int:
         max_int = int(i)
-print("Максимальное циффра в введенном числе:", max_int)
+print("Максимальное циффра в введенном числе:", max_int )
 """
 
 
