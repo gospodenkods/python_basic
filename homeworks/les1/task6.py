@@ -32,4 +32,4 @@ while input_last > input_first:
     trigger_day = trigger_day+1
   #  print(input_first)
 
-print(f"На  день под номером  {trigger_day} ,спорстмен выполнил задуманное ")
+print(f"На  день под номером  {trigger_day} ,спорстмен выполнил задуманное  ")
