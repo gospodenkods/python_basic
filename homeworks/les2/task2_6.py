@@ -48,7 +48,6 @@ while True:
         analytics[f].append(features[f])
     goods_list.append((num, features))
 
-
 goods_list = int(input("Введите количество товара \n"))
 n = 1
 input_dict = []
@@ -56,11 +55,12 @@ input_list = []
 analytics_list = {}
 while n <= goods_list:
     input_dict = dict({'название': input("введите название "), 'цена': input("Введите цену "),
-                    'количество': input('Введите количество '), 'eд': input("Введите единицу измерения ")})
+                       'количество': input('Введите количество '), 'eд': input("Введите единицу измерения ")})
     input_list.append((n, input_dict))
     n += 1
     analytics_list = dict(
-        {'название': input_dict.get('название'), 'цена': input_dict.get('цена'), 'количество': input_dict.get('количество'),
+        {'название': input_dict.get('название'), 'цена': input_dict.get('цена'),
+         'количество': input_dict.get('количество'),
          'ед': input_dict.get('ед')})
 print(f"Список ввода : {input_list}\n")
 print(f"Аналитика: {analytics_list}\n")
