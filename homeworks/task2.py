@@ -4,9 +4,11 @@
 Пример исходного списка: [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55].
 Результат: [12, 44, 4, 10, 78, 123]
 
+Коллеги по опасному бизнесу поправили
 """
 
-
-int_list = [2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
-result = [element for element in int_list if element > int_list[int_list.index(element) - 1]]
+int_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+# result = [element for element in int_list if element > int_list[int_list.index(element) - 1]]
+result = [element for element in int_list if
+          int_list.index(element) != 0 and element > int_list[int_list.index(element) - 1]]
 print(result)
